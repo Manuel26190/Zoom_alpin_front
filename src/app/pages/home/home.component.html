@@ -1,0 +1,71 @@
+<main>
+    <!--Section qui affiche le diaporama d'images-->
+    <section class="diaporama-section">
+        <div class="diaporama-container-div">
+            <img
+                *ngFor="let image of images; let i = index"
+                [src]="image"
+                [alt]="'Image ' + (i + 1)"
+                [style.opacity]="i === 0 ? 1 : 0"
+                [id]="'image-' + i"
+            />
+        </div>
+    </section>
+
+    <article class="container">
+        <!--Section qui affiche le titre et la présentation du site-->
+        <section class="presentation-section">
+            <div class="presentation-div">
+                <h1>Zoom alpin</h1>
+                <div class="presentation-text">
+                    <p>
+                        <img
+                            src="./assets/pictures/chouette.jpg"
+                            alt="chouette"
+                        />
+                        Bienvenue sur Zoom Alpin, le portail dédié à tous les
+                        passionnés de photographie ornithologique en montagne.
+                        <br />
+                        Que vous soyez un amateur ou un photographe aguerri,
+                        notre plateforme vous offre un espace unique pour
+                        partager et découvrir des clichés exceptionnels
+                        d'oiseaux capturés dans les majestueux massifs
+                        montagneux. <br />
+                        Avec Zoom Alpin, vous pouvez facilement créer et publier
+                        vos propres articles, accompagnés de vos plus belles
+                        photos et de descriptions détaillées. <br />
+                        Notre communauté vous permet de partager vos
+                        expériences, d’échanger des conseils et de vous inspirer
+                        des œuvres d’autres passionnés. <br />
+                        Que vous soyez à la recherche de nouveaux spots
+                        photographiques, de techniques pour améliorer vos prises
+                        de vue ou simplement de partager votre amour pour la
+                        nature et l’ornithologie, Zoom Alpin est le lieu idéal
+                        pour vous. Rejoignez-nous et contribuez à enrichir cette
+                        merveilleuse collection de photographies ornithologiques
+                        de montagne.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section qui affiche les deux blocs Events et publications -->
+        <section class="event-post-section">
+            <div class="event-div post-event-div">
+                <h2>Évènements</h2>
+                <p>
+                    Ici vous pouvez consulter la totalité des évènements
+                    présents sur Zoom Alpin. Pour créer un évènement, il vous
+                    fraudra préalablement créer un compte.
+                </p>
+            </div>
+            <div class="post-div post-event-div">
+                <h2>Publications</h2>
+                <p>
+                    Dans cette partie, vous pouvez consulter toutes les
+                    publications publiés par les utilisateurs du site, pour
+                    publier il vous faudra créer un compte utilisateur.
+                </p>
+            </div>
+        </section>
+    </article>
+</main>
