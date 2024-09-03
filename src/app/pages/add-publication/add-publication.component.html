@@ -1,0 +1,104 @@
+<section class="publication-section">
+    <article class="w-50 mx-auto d-flex justify-content-center">
+        <form
+            class="w-75 row-gap-3"
+            [formGroup]="addPublication"
+            (ngSubmit)="onSubmit()"
+        >
+            <h2>Ajouter une publication</h2>
+            <!-- Publication title -->
+            <label for="event_name"></label>
+            <input
+                type="text"
+                id="event_name"
+                placeholder="Titre"
+                formControlName="title"
+                class="p-2 w-75"
+            />
+            <!-- type de publication -->
+            <label for="type"></label>
+            <select
+                type="text"
+                id="type"
+                formControlName="type"
+                class="p-2 w-75"
+            >
+                <option value="" disabled selected hidden>
+                    Type de publication
+                </option>
+                <option value="Conférences">Conférences</option>
+                <option value="Exposition">Exposition</option>
+                <option value="Observation">Observation</option>
+                <option value="Réunion">Réunion</option>
+                <option value="Rencontre">Rencontre</option>
+                <option value="Sortie nature">Sortie nature</option>
+            </select>
+            <!-- Publication description -->
+            <label for="description"></label>
+            <textarea
+                type="text"
+                id="description"
+                placeholder="Description"
+                formControlName="description"
+                class="p-2 w-75"
+            ></textarea>
+            <!-- location -->
+            <label for="location"></label>
+            <input
+                type="text"
+                id="location"
+                placeholder="Lieu de l'évènement"
+                formControlName="location"
+                class="p-2 w-75"
+            />
+            <!-- zip_code -->
+            <label for="zip_code"></label>
+            <input
+                type="text"
+                id="zip_code"
+                placeholder="Code postal"
+                formControlName="zip_code"
+                class="p-2 w-75"
+            />
+            <!-- image -->
+            <!-- <label for="image"></label>
+            <input
+                type="file"
+                id="image"
+                placeholder="Chargez votre image"
+                formControlName="image"
+                class="p-2"
+            /> -->
+            <!-- image -->
+            <label for="image"></label>
+            <input
+                type="text"
+                id="image"
+                placeholder="Chargez votre image"
+                formControlName="image"
+                class="p-2 w-75"
+            />
+
+            <!-- start date -->
+            <label class="text-light" for="date_start"
+                >Date de l'évènement :</label
+            >
+            <input
+                type="date"
+                id="date_start"
+                placeholder="Date de l'évènement"
+                formControlName="date_start"
+                class="p-2"
+            />
+            <!-- <input
+                style="visibility: hidden"
+                type="date"
+                id="postedat"
+                placeholder="Date du post"
+                class="p-2"
+                formControlName="postedat"
+            /> -->
+            <button type="submit" class="submit-btn w-50 mt-3">Ajouter</button>
+        </form>
+    </article>
+</section>

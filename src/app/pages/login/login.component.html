@@ -1,0 +1,57 @@
+<section class="form-section">
+    <article>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <h2>S'identifier</h2>
+            <div class="form-img-div">
+                <img src="../../assets/logo/icon-lens-2.png" alt="" />
+            </div>
+            <fieldset>
+                <div class="email-pass-div">
+                    <div>
+                        <img src="../../assets/logo/user-solid.svg" alt="" />
+                    </div>
+
+                    <label for="email"></label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Saisissez votre email"
+                        formControlName="email"
+                    />
+                </div>
+                <div class="password-div">
+                    <div>
+                        <img src="../../assets/logo/lock-solid.svg" alt="" />
+                    </div>
+                    <label for="password"></label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Saisissez votre mot de passe"
+                        formControlName="password"
+                    />
+                </div>
+                <div>
+                    <a href=""
+                        ><p class="forgot-password-text">
+                            Mot de passe oublié ?
+                        </p></a
+                    >
+                </div>
+                <div class="submit-div">
+                    <button type="submit" class="submit-btn">
+                        Se connecter
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+        <div class="registrer-div d-flex align-items-center flex-column">
+            <h3>Pas encore inscrit ?</h3>
+            <button type="button" class="registrer-btn" routerLink="/register">
+                Créer mon compte
+            </button>
+        </div>
+    </article>
+</section>

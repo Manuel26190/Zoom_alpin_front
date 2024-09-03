@@ -1,0 +1,77 @@
+// Variables de couleurs
+$kaki-color: #939661;
+$orange-color: #d87c4a;
+$dark-kaki-color: #665c55;
+$dark-color: #3f3f3f;
+$black-color: #050408;
+
+// Variables d'ombre
+$box-shadow: 2px 2px 15px black;
+$box-shadow-light: 2px 2px 6px #665c55;
+$box-shadow-orange: 2px 5px 15px #d87c4a;
+
+.event-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 5em 0em 5em;
+    background-image: url('../../../../public/assets/pictures/Aigle_royal_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed, scroll;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+}
+img {
+    max-height: 65%;
+    max-width: 65%;
+}
+
+.date_event {
+    width: 33%;
+}
+
+.event_type {
+    width: 25%;
+    padding: 0.4em 1em;
+    border-radius: 0.4em;
+}
+.event_location {
+    width: 33%;
+    text-align: end;
+}
+
+.conference {
+    color: aliceblue;
+    background-color: #939661;
+    text-shadow: 1px 1px 1px black;
+}
+.exposition {
+    color: aliceblue;
+    background-color: #d87c4a;
+    text-shadow: 1px 1px 1px black;
+}
+.observation {
+    color: aliceblue;
+    background-color: #665c55;
+    text-shadow: 1px 1px 1px black;
+}
+.rencontre {
+    color: aliceblue;
+    background-color: #4b6a89;
+    text-shadow: 1px 1px 1px black;
+}
+.reunion {
+    color: aliceblue;
+    background-color: #7b491fd1;
+    text-shadow: 1px 1px 1px black;
+}
+.sortie_nature {
+    color: aliceblue;
+    background-color: #939661;
+    text-shadow: 1px 1px 1px black;
+}

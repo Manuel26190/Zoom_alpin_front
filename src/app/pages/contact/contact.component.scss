@@ -1,0 +1,136 @@
+// Variables de couleurs
+$kaki-color: #939661;
+$orange-color: #d87c4a;
+$dark-kaki-color: #665c55;
+$dark-color: #3f3f3f;
+$black-color: #050408;
+
+// Variables d'ombre
+$box-shadow: 2px 2px 15px black;
+$box-shadow-light: 2px 2px 6px #665c55;
+$box-shadow-orange: 2px 5px 15px #d87c4a;
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 5em 2em 5em;
+    background-image: url('../../../../public/assets/pictures/Aigle_royal_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+
+    h2 {
+        font-size: 1.4em;
+        color: white;
+        margin: 1em 0;
+        text-shadow: 2px 2px 4px black;
+    }
+    article {
+        position: relative;
+        padding: 2em 0 0 0;
+        z-index: 2;
+        width: 40%;
+    }
+    form {
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 1.5em;
+        background-color: #9396617d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: $box-shadow;
+        border: 6px double white;
+        fieldset {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1.7em;
+            width: 100%;
+            .input-div {
+                width: 70%;
+                height: 3em;
+                position: relative;
+                display: flex;
+                align-items: center;
+                div {
+                    width: 4em;
+                    height: 3em;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: $box-shadow-light;
+                    img {
+                        width: 1.5em;
+                        height: 1.5em;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        input {
+            height: 100%;
+            padding: 0.5em;
+            box-shadow: $box-shadow-light;
+            border: none;
+            width: 100%;
+            font-size: 1em;
+        }
+        textarea {
+            width: 90%;
+            height: 12em;
+            padding: 1em;
+            border-radius: 0.4em;
+        }
+        button {
+            padding: 0.5em 3em;
+            box-shadow: $box-shadow-light;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+            margin: 1em 0 2em;
+        }
+        .submit-btn:hover {
+            color: #d87c4a;
+            //text-shadow: 1px 1px 1px $dark-color;
+        }
+    }
+}
+
+// Gestion du responsive
+
+@media screen and (max-width: 1260px) {
+    .input-div {
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .contact-section {
+        padding: 2em 0;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 769px) {
+    .contact-section {
+        padding: 2em 0;
+        article {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 413px) {
+    .contact-section {
+        padding: 7em 0;
+        article {
+            width: 95%;
+        }
+    }
+}

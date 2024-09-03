@@ -1,0 +1,173 @@
+// Variables de couleurs
+$kaki-color: #939661;
+$orange-color: #d87c4a;
+$dark-kaki-color: #665c55;
+$dark-color: #3f3f3f;
+$black-color: #050408;
+
+// Variables d'ombre
+$box-shadow: 2px 2px 15px black;
+$box-shadow-light: 2px 2px 6px #665c55;
+$box-shadow-orange: 2px 5px 15px #d87c4a;
+
+.user-profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 5em 0em 5em;
+    background-image: url('../../../../public/assets/pictures/Aigle_royal_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    text-shadow: 2px 2px 4px black;
+
+    h2 {
+        font-size: 1.6em;
+        color: white;
+        margin: 1em 0;
+        text-shadow: 2px 2px 4px black;
+    }
+    h3 {
+        font-size: 1.4em;
+        margin-bottom: 2em;
+        border-top: 1px solid $dark-color;
+        border-bottom: 1px solid $dark-color;
+        padding: 0.2em;
+        text-shadow: 1px 1px 1px black;
+    }
+    h3:hover {
+        color: $orange-color;
+    }
+    article {
+        position: relative;
+        z-index: 2;
+        width: 60%;
+        border-radius: 1.5em;
+        background-color: #9396617d;
+        border: 6px double white;
+        padding: 2em;
+        box-shadow: $box-shadow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    .profil-info-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        margin-bottom: 2em;
+        width: 100%;
+        div {
+            width: 15em;
+            display: flex;
+            justify-content: center;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    img {
+        max-width: 5em;
+        margin-bottom: 2em;
+    }
+    .profile-div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .btn-profile-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .post-event-container {
+            height: 20em;
+            width: 15em;
+        }
+        .post-profile-div {
+            display: flex;
+            flex-direction: column;
+            p {
+                text-align: center;
+                border-bottom: 1px solid $dark-color;
+            }
+        }
+        .event-profile-div {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                text-align: center;
+                border-bottom: 1px solid $dark-color;
+            }
+        }
+        .notif-profile-div {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                text-align: center;
+                border-bottom: 1px solid $dark-color;
+                margin: 0;
+                padding: 0.5em;
+            }
+        }
+    }
+}
+.modal-profile {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.display {
+    display: none;
+}
+
+// Gestion du responsive
+@media screen and (max-width: 1024px) {
+    .user-profile-section {
+        //padding: 4em 0;
+        article {
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .user-profile-section {
+        margin-top: 3em;
+        article {
+            width: 95%;
+        }
+        .profil-info-div {
+            flex-direction: column;
+        }
+        .profile-div {
+            flex-direction: column;
+            .post-event-container {
+                width: 100%;
+            }
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .user-profile-section {
+        background-attachment: scroll;
+        background-repeat: repeat;
+        height: auto;
+
+        article {
+            width: 95%;
+        }
+    }
+}

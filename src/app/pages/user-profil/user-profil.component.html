@@ -1,0 +1,72 @@
+<section class="user-profile-section">
+    <article>
+        <!-- <h2>Profil</h2> -->
+        <div>
+            <img src="../../assets/logo/profil-homme.png" alt="" />
+        </div>
+        <div class="profil-info-div">
+            <div>
+                <p>Spinoz Ma</p>
+            </div>
+            <div>
+                <p>manuelfaure26190gmail.com</p>
+            </div>
+        </div>
+        <div class="profile-div">
+            <div class="btn-profile-div">
+                <h3 (click)="openModal('post')" class="post-btn" type="button">
+                    Publications
+                </h3>
+                <h3
+                    (click)="openModal('event')"
+                    class="event-btn"
+                    type="button"
+                >
+                    Évènements
+                </h3>
+                <h3
+                    (click)="openModal('notif')"
+                    class="notif-btn"
+                    type="button"
+                >
+                    Notifications
+                </h3>
+            </div>
+            <div class="post-event-container">
+                <div class="post-profile-div modal-profile display" #postModal>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                </div>
+                <div
+                    class="event-profile-div modal-profile display"
+                    #eventModal
+                >
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                </div>
+                <div
+                    class="notif-profile-div modal-profile display"
+                    #notifModal
+                >
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
