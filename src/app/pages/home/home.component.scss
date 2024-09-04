@@ -30,7 +30,7 @@ main {
 
         // Section du titre et de la présentation du site
         .presentation-section {
-            padding: 3em 0;
+            padding: 6em 0;
             .presentation-div {
                 display: flex;
                 flex-direction: column;
@@ -86,6 +86,7 @@ main {
                 width: 48%;
                 box-shadow: 4px 4px 15px rgb(155, 155, 155);
                 border-radius: 50%;
+                cursor: pointer;
             }
             .event-div {
                 background-color: $kaki-color;

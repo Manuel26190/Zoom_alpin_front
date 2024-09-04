@@ -45,9 +45,10 @@ export class AddPublicationComponent {
         })
     }
 
+    // Ajouter une publication
     onSubmit() {
-        //console.log(this.addEventForm.value)
-        //Ajouter une évènement
+        //console.log(this.addPublication.value)
+        //Ajouter une publication
         if (this.addPublication.valid) {
             //console.log(this.addEventForm.value)
             this.publicationService
@@ -56,7 +57,7 @@ export class AddPublicationComponent {
                     next: (response) => {
                         console.log(response)
                         // Redirection après succès de la requête
-                        this.router.navigate(['/events'])
+                        this.router.navigate(['/publications'])
                     },
                     error: (error) => {
                         console.error('add_event error', error.error)

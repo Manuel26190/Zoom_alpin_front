@@ -16,14 +16,15 @@
         <!--Section qui affiche le titre et la présentation du site-->
         <section class="presentation-section">
             <div class="presentation-div">
-                <h1>Zoom alpin</h1>
+                <!-- <h1>Zoom alpin</h1> -->
                 <div class="presentation-text">
                     <p>
                         <img
                             src="./assets/pictures/chouette.jpg"
                             alt="chouette"
                         />
-                        Bienvenue sur Zoom Alpin, le portail dédié à tous les
+                        Bienvenue sur
+                        <span>Zoom Alpin</span>, le portail dédié à les
                         passionnés de photographie ornithologique en montagne.
                         <br />
                         Que vous soyez un amateur ou un photographe aguerri,
@@ -50,7 +51,7 @@
         </section>
         <!-- Section qui affiche les deux blocs Events et publications -->
         <section class="event-post-section">
-            <div class="event-div post-event-div">
+            <div class="event-div post-event-div" routerLink="/events">
                 <h2>Évènements</h2>
                 <p>
                     Ici vous pouvez consulter la totalité des évènements
@@ -58,7 +59,7 @@
                     fraudra préalablement créer un compte.
                 </p>
             </div>
-            <div class="post-div post-event-div">
+            <div class="post-div post-event-div" routerLink="/publications">
                 <h2>Publications</h2>
                 <p>
                     Dans cette partie, vous pouvez consulter toutes les

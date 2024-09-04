@@ -3,11 +3,12 @@ import { Event } from '../../core/model/EventModel'
 import { EventService } from '../../core/services/event.service'
 import { CommonModule } from '@angular/common'
 import { DatePipe } from '@angular/common'
+import { CardComponent } from '../../components/card/card.component'
 
 @Component({
     selector: 'app-events',
     standalone: true,
-    imports: [DatePipe, CommonModule],
+    imports: [DatePipe, CommonModule, CardComponent],
     templateUrl: './events.component.html',
     styleUrl: './events.component.scss',
 })
