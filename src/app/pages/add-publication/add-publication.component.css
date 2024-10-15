@@ -1,0 +1,79 @@
+.publication-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 1em 0em 1em;
+  background-image: url("../../../../public/assets/pictures/Aigle_royal_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+.publication-section h2 {
+  font-size: 1.4em;
+  color: white;
+  margin: 0 0 1em 0;
+  text-shadow: 2px 2px 4px black;
+}
+.publication-section article {
+  position: relative;
+  padding: 1em 0 0 0;
+  z-index: 2;
+}
+.publication-section form {
+  padding: 3em 0;
+  border-radius: 1.5em;
+  background-color: rgba(147, 150, 97, 0.4901960784);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 15px black;
+  border: 6px double white;
+  margin: 1em 0 3em 0;
+}
+.publication-section input {
+  padding: 1em;
+  box-shadow: 2px 2px 6px #665c55;
+  border: none;
+  font-size: 1em;
+  height: 2.5em;
+}
+.publication-section textarea {
+  height: 10em;
+  box-shadow: 2px 2px 6px #665c55;
+}
+.publication-section label {
+  text-shadow: 2px 2px 4px black;
+}
+.publication-section button {
+  padding: 0.5em;
+  width: 50%;
+  box-shadow: 2px 2px 6px #665c55;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+}
+.publication-section .submit-btn:hover {
+  color: #d87c4a;
+}
+
+@media screen and (max-width: 1024px) {
+  .publication-section article {
+    width: 70% !important;
+  }
+  .publication-section article form {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  .publication-section article {
+    width: 100% !important;
+  }
+  .publication-section article form {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=add-publication.component.css.map */

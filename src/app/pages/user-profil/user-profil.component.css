@@ -1,0 +1,174 @@
+.user-profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 5em 0em 5em;
+  background-image: url("../../../../public/assets/pictures/Aigle_royal_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  text-shadow: 2px 2px 4px black;
+}
+.user-profile-section h2 {
+  font-size: 1.6em;
+  color: white;
+  margin: 1em 0;
+  text-shadow: 2px 2px 4px black;
+}
+.user-profile-section h3 {
+  font-size: 1.4em;
+  margin-bottom: 2em;
+  border-top: 1px solid #3f3f3f;
+  border-bottom: 1px solid #3f3f3f;
+  padding: 0.2em;
+  text-shadow: 1px 1px 1px black;
+}
+.user-profile-section h3:hover {
+  color: #d87c4a;
+}
+.user-profile-section article {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+  border-radius: 1.5em;
+  background-color: rgba(147, 150, 97, 0.4901960784);
+  border: 6px double white;
+  padding: 1em;
+  box-shadow: 2px 2px 15px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.user-profile-section .profil-info-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+.user-profile-section .profil-info-div div {
+  width: 15em;
+  display: flex;
+  justify-content: center;
+}
+.user-profile-section .profil-info-div p {
+  margin: 0;
+}
+.user-profile-section img {
+  max-width: 5em;
+  margin-bottom: 1.5em;
+}
+.user-profile-section .profile-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.user-profile-section .profile-div .btn-profile-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid white;
+  padding: 2em;
+  border-radius: 1em;
+  background: rgba(101, 96, 30, 0.2588235294);
+}
+.user-profile-section .profile-div .post-event-container {
+  height: 20em;
+  width: 65%;
+  border: 2px solid white;
+  padding: 1em;
+  border-radius: 1em;
+  background: rgba(101, 96, 30, 0.2588235294);
+}
+.user-profile-section .profile-div .post-profile-div {
+  display: flex;
+  flex-direction: column;
+}
+.user-profile-section .profile-div .post-profile-div p {
+  text-align: center;
+  border-bottom: 1px solid #3f3f3f;
+  border: 2px solid white;
+  padding: 0.4em;
+  border-radius: 1em;
+  background: rgba(101, 96, 30, 0.2588235294);
+}
+.user-profile-section .profile-div .event-profile-div {
+  display: flex;
+  flex-direction: column;
+}
+.user-profile-section .profile-div .event-profile-div p {
+  text-align: center;
+  border-bottom: 1px solid #3f3f3f;
+  border: 2px solid white;
+  padding: 0.4em 0.5em;
+  border-radius: 1em;
+  background: rgba(101, 96, 30, 0.2588235294);
+}
+.user-profile-section .profile-div .notif-profile-div {
+  display: flex;
+  flex-direction: column;
+}
+.user-profile-section .profile-div .notif-profile-div p {
+  text-align: center;
+  border-bottom: 1px solid #3f3f3f;
+  border: 2px solid white;
+  padding: 0.4em 0.5em;
+  border-radius: 1em;
+  background: rgba(101, 96, 30, 0.2588235294);
+}
+
+.modal-profile {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 1em;
+}
+
+.display {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .user-profile-section article {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .user-profile-section {
+    margin-top: 3em;
+  }
+  .user-profile-section article {
+    width: 95%;
+  }
+  .user-profile-section .profil-info-div {
+    flex-direction: column;
+  }
+  .user-profile-section .profile-div {
+    flex-direction: column;
+  }
+  .user-profile-section .profile-div .post-event-container {
+    width: 100%;
+  }
+  .user-profile-section h3 {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .user-profile-section {
+    background-attachment: scroll;
+    background-repeat: repeat;
+    height: auto;
+  }
+  .user-profile-section article {
+    width: 95%;
+  }
+}/*# sourceMappingURL=user-profil.component.css.map */

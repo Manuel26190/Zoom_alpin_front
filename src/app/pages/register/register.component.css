@@ -1,0 +1,147 @@
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8em 5em 2em 5em;
+  background-image: url("../../../../public/assets/pictures/Aigle_royal_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+}
+.form-section h2 {
+  font-size: 1.4em;
+  color: white;
+  margin: 1em 0;
+  text-shadow: 2px 2px 4px black;
+}
+.form-section article {
+  position: relative;
+  padding: 1em 0 0 0;
+  z-index: 2;
+  border-radius: 1.5em;
+  background-color: rgba(147, 150, 97, 0.4901960784);
+  box-shadow: 2px 2px 15px black;
+  border: 6px double white;
+}
+.form-section article h3 {
+  font-size: 1.3em;
+  color: white;
+  margin: 0 0 0.8em 0;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+}
+.form-section article .registrer-btn {
+  background: rgb(255, 255, 255);
+  border: 2px double white;
+  padding: 1em;
+  width: 80%;
+  box-shadow: 2px 2px 6px #665c55;
+  cursor: pointer;
+  border: none;
+}
+.form-section article .registrer-btn:hover {
+  border-color: #d87c4a;
+  color: #d87c4a;
+}
+.form-section form {
+  padding: 1.5em 2em 1em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-section form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5em;
+  width: 20em;
+}
+.form-section form fieldset .email-pass-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-section form fieldset .email-pass-div div {
+  width: 4em;
+  height: 3em;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 6px #665c55;
+}
+.form-section form fieldset .email-pass-div div img {
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+}
+.form-section form fieldset .password-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-section form fieldset .password-div div {
+  width: 4em;
+  height: 3em;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 6px #665c55;
+}
+.form-section form fieldset .password-div div img {
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+}
+.form-section form fieldset .forgot-password-text {
+  text-align: center;
+  color: black;
+  margin-bottom: 0.8em;
+}
+.form-section form fieldset .forgot-password-text:hover {
+  color: white;
+}
+.form-section form input {
+  padding: 1em;
+  box-shadow: 2px 2px 6px #665c55;
+  border: none;
+  width: 100%;
+  font-size: 1em;
+  height: 3em;
+}
+.form-section form button {
+  padding: 1em;
+  width: 100%;
+  box-shadow: 2px 2px 6px #665c55;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+}
+.form-section form .submit-btn:hover {
+  color: #d87c4a;
+}
+.form-section form .form-img-div {
+  position: absolute;
+  top: -40px;
+  z-index: 1000;
+}
+.form-section form .form-img-div img {
+  width: 5em;
+}
+.form-section form .submit-div {
+  border-bottom: 1px solid white;
+  padding-bottom: 1.3em;
+}
+
+@media screen and (max-width: 768px) {
+  .form-section {
+    padding: 7em 0;
+    justify-content: flex-start;
+  }
+}/*# sourceMappingURL=register.component.css.map */

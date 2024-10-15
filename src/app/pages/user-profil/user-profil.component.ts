@@ -13,10 +13,8 @@ export class UserProfileComponent implements AfterViewInit {
     @ViewChild('notifModal') notifModalElement!: ElementRef
 
     ngAfterViewInit() {
-        // Initialiser les modales avec display: none
         this.postModalElement.nativeElement.style.display = 'none'
         this.eventModalElement.nativeElement.style.display = 'none'
-        //this.notifModalElement.nativeElement.style.display = 'none'
     }
 
     openModal(modalType: string): void {

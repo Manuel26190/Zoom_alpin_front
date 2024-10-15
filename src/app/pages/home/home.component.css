@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  max-width: 1140px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main {
+  animation: 2500ms fadeIn;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+main article .presentation-section {
+  padding: 6em 0;
+}
+main article .presentation-section .presentation-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article .presentation-section .presentation-div h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #939661;
+  text-shadow: 2px 2px 2px #665c55;
+}
+main article .presentation-section .presentation-div .presentation-text {
+  display: flex;
+  letter-spacing: 0.5px;
+  line-height: 2.2em;
+}
+main article .presentation-section .presentation-div .presentation-text p {
+  padding: 1.3em;
+  text-align: justify;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+main article .presentation-section .presentation-div img {
+  max-width: 20em;
+  float: right;
+  margin: 0 0 1em 2em;
+}
+main article .event-post-section {
+  display: flex;
+  height: 50vh;
+  justify-content: space-between;
+  margin-bottom: 7em;
+}
+main article .event-post-section h2 {
+  text-shadow: 1px 1px 1px #3f3f3f;
+  color: #fbfbfb;
+}
+main article .event-post-section p {
+  color: #fbfbfb;
+  text-shadow: 1px 1px 1px #3f3f3f;
+  font-size: 1.1em;
+  text-align: center;
+}
+main article .event-post-section .post-event-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  gap: 2em;
+  background-color: #939661;
+  width: 48%;
+  box-shadow: 4px 4px 15px rgb(155, 155, 155);
+  border-radius: 50%;
+  cursor: pointer;
+}
+main article .event-post-section .event-div {
+  background-color: #939661;
+}
+main article .event-post-section .post-div {
+  background-color: #d87c4a;
+}
+
+.diaporama-section .diaporama-container-div {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+.diaporama-section .diaporama-container-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 2000ms ease;
+}
+.diaporama-section .diaporama-container-div .diaporama-container-div img:first-child {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  main article .presentation-section {
+    padding: 6em 0 0;
+  }
+}
+@media (max-width: 768px) {
+  main article .presentation-section {
+    padding: 0;
+  }
+  main article .presentation-section .presentation-div .presentation-text p {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main article .presentation-section .presentation-div .presentation-text img {
+    width: 90%;
+    float: none;
+    margin: 1.5em 0 0 0;
+  }
+  main article .event-post-section {
+    flex-direction: column;
+    height: auto;
+    padding: 4em 0;
+  }
+  main article .event-post-section .event-div {
+    width: auto;
+  }
+  main article .event-post-section .post-div {
+    width: auto;
+  }
+}
+@media (max-width: 380px) {
+  main article .presentation-section .presentation-div .presentation-text p {
+    padding: 0 1.2em 1.2em 1.2em;
+  }
+}/*# sourceMappingURL=home.component.css.map */
